@@ -12,10 +12,18 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
+import {
+    Drawer,
+    DrawerContent,
+    DrawerHeader,
+    DrawerTitle,
+    DrawerTrigger
+} from '../ui/drawer';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
+import { AlignLeft } from 'lucide-react';
 
 // CSS import
 import '@/app/globals.css'
@@ -29,15 +37,22 @@ const Navbar = () => {
 
             {/* Navbar for PC and wide media devices */}
             <section
-                className=' custom-container h-25 w-screen border-b-[1px] border-b-white flex justify-evenly items-center shadow-md shadow-orange-200'
+                className=' custom-container h-22 w-screen border-b-[1px] border-b-white flex justify-evenly items-center shadow-md shadow-orange-200'
             >
-                <Image src={'/logo.svg'} alt='logo' width={325} height={325} />
+                <Image
+                    src={'/logo.svg'}
+                    alt='logo'
+                    width={300}
+                    height={300}
+                    className=' cursor-pointer'
+                    onClick={() => router.push('/')}
+                />
                 <NavigationMenu className=' flex flex-row gap-3'>
                     <NavigationMenuList>
 
                         {/* Hair Treatment Section */}
 
-                        <NavigationMenuItem>
+                        <NavigationMenuItem className=' mx-2'>
                             <NavigationMenuTrigger className=' w-full h-full border border-orange-300 bg-transparent rounded-md p-3 cursor-pointer'>Hair Treatment</NavigationMenuTrigger>
                             <NavigationMenuContent className=' bg-orange-50'>
                                 <ul className=' flex flex-row md:w-[500px] bg-transparent text-orange-400 gap-1'>
@@ -106,7 +121,7 @@ const Navbar = () => {
 
                         {/* Skin Rejuvenation Section */}
 
-                        <NavigationMenuItem>
+                        <NavigationMenuItem className=' mx-2'>
                             <NavigationMenuTrigger className=' w-full h-full border border-orange-300 bg-transparent rounded-md p-3 cursor-pointer'>Skin Rejuvenation</NavigationMenuTrigger>
                             <NavigationMenuContent className=' bg-orange-50'>
                                 <ul className=' flex flex-row md:w-[500px] bg-transparent text-orange-400 gap-1'>
@@ -175,7 +190,7 @@ const Navbar = () => {
 
                         {/* Personalized Nutrition Section */}
 
-                        <NavigationMenuItem>
+                        <NavigationMenuItem className=' mx-2'>
                             <NavigationMenuTrigger className=' w-full h-full border border-orange-300 bg-transparent rounded-md p-3 cursor-pointer'>Personalized Nutrition</NavigationMenuTrigger>
                             <NavigationMenuContent className=' bg-orange-50'>
                                 <ul className=' flex flex-row md:w-[700px] bg-transparent text-orange-400 gap-1'>
@@ -274,7 +289,7 @@ const Navbar = () => {
 
                         {/* Advanced Laser Treatments Section */}
 
-                        <NavigationMenuItem>
+                        <NavigationMenuItem className=' mx-2'>
                             <NavigationMenuTrigger className=' w-full h-full border border-orange-300 bg-transparent rounded-md p-3 cursor-pointer'>Advanced Laser Treatments</NavigationMenuTrigger>
                             <NavigationMenuContent className=' bg-orange-50'>
                                 <ul className=' flex flex-row md:w-[700px] bg-transparent text-orange-400 gap-1'>
@@ -393,7 +408,60 @@ const Navbar = () => {
             </section>
 
             {/* Navbar for mobile and small media devices */}
-            <section></section>
+            <section
+                className=' custom-container-mobile h-15 w-screen border-b-[1px] border-b-white flex justify-between items-center shadow-md shadow-orange-200 p-[5vw]'
+            >
+                <Image
+                    src={'/logo.svg'}
+                    alt='logo'
+                    width={200}
+                    height={200}
+                    className=' cursor-pointer'
+                    onClick={() => router.push('/')}
+                />
+                <Drawer>
+                    <DrawerTrigger>
+                        <Button
+                            variant={'ghost'}
+                            className=' cursor-pointer'
+                        >
+                            <AlignLeft />
+                        </Button>
+                    </DrawerTrigger>
+                    <DrawerContent>
+                        <div className=' w-full py-2 px-1.5 flex flex-col justify-center items-center gap-7'>
+                        <div className=' w-full h-full'>
+                            <DrawerHeader>
+                                <DrawerTitle className=' text-base font-bold text-center text-orange-400'>
+                                    AVINNYA SKIN CLINIC
+                                </DrawerTitle>
+                            </DrawerHeader>
+                            <div className=' h-fit w-full flex flex-col gap-2'>
+                                <Link href={'/hair-treatment'} className=' w-full text-center border border-orange-400 p-2 rounded-md text-sm font-medium'>
+                                    Hair Treatments
+                                </Link>
+                                <Link href={'/skin-rejuvenation'} className=' w-full text-center border border-orange-400 p-2 rounded-md text-sm font-medium'>
+                                    Skin Rejuvenation
+                                </Link>
+                                <Link href={'/personalized-nutrition'} className=' w-full text-center border border-orange-400 p-2 rounded-md text-sm font-medium'>
+                                    Personalized Nutrition
+                                </Link>
+                                <Link href={'/advanced-laser-treatments'} className=' w-full text-center border border-orange-400 p-2 rounded-md text-sm font-medium'>
+                                    Advanced Laser Treatments
+                                </Link>
+                            </div>
+                        </div>
+                        <Button
+                            variant={'default'}
+                            className=' w-full cursor-pointer p-3 bg-orange-400 text-white'
+                            onClick={() => { window.open('tel:+919108000000', '_self'); }}
+                        >
+                            Call Now
+                        </Button>
+                        </div>
+                    </DrawerContent>
+                </Drawer>
+            </section>
         </React.Fragment>
     );
 }

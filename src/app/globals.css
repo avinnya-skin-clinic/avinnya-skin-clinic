@@ -127,3 +127,9 @@
     display: none;
   }
 }
+
+.custom-container-mobile {
+  @media (min-width: 1400px) {
+    display: none;
+  }
+}
