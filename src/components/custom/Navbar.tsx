@@ -54,6 +54,7 @@ const Navbar = () => {
                                                         width={400}
                                                         height={400}
                                                         className="absolute left-0 top-0 h-full w-full object-cover z-0"
+                                                        priority
                                                     />
                                                     <div className="absolute inset-0 bg-black/15 backdrop-blur-sm p-4 opacity-0 hover:opacity-100 flex flex-col justify-center items-center transition-all duration-300 ease-in-out">
                                                         <div className="text-xl text-white font-extrabold underline mb-2">
@@ -122,6 +123,7 @@ const Navbar = () => {
                                                         width={400}
                                                         height={400}
                                                         className="absolute left-0 top-0 h-full w-full object-cover z-0"
+                                                        priority
                                                     />
                                                     <div className="absolute inset-0 bg-black/15 backdrop-blur-sm p-4 opacity-0 hover:opacity-100 flex flex-col justify-center items-center transition-all duration-300 ease-in-out">
                                                         <div className="text-lg text-white font-extrabold underline mb-2">
@@ -190,6 +192,7 @@ const Navbar = () => {
                                                         width={400}
                                                         height={400}
                                                         className="absolute left-0 top-0 h-full w-full object-cover z-0"
+                                                        priority
                                                     />
                                                     <div className="absolute inset-0 bg-black/15 backdrop-blur-sm p-4 opacity-0 hover:opacity-100 flex flex-col justify-center items-center transition-all duration-300 ease-in-out">
                                                         <div className="text-lg text-white font-extrabold underline mb-2">
@@ -288,6 +291,7 @@ const Navbar = () => {
                                                         width={400}
                                                         height={400}
                                                         className="absolute left-0 top-0 h-full w-full object-cover z-0"
+                                                        priority
                                                     />
                                                     <div className="absolute inset-0 bg-black/35 backdrop-blur-sm p-4 opacity-0 hover:opacity-100 flex flex-col justify-center items-center transition-all duration-300 ease-in-out">
                                                         <div className="text-xl text-white font-extrabold underline mb-2">
