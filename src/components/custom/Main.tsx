@@ -24,6 +24,7 @@ const Main = () => {
                                 width={540}
                                 height={640}
                                 objectFit='contain'
+                                priority
                             />
                         </div>
                         <div className=' w-screen h-[87.5vh] max-md:h-[75vh] flex flex-col flex-nowrap justify-start items-center translate-y-[25%] gap-4 max-md:gap-1 px-4 py-8 max-w-4xl z-10'>
