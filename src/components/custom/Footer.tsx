@@ -40,7 +40,13 @@ const Footer = () => {
                         </div>
                         <div className=' flex flex-row gap-1'>
                             <span className=' font-bold'>Phone: </span>
-                            <p>+91-9999999999</p>
+                            <Button
+                                variant={'link'}
+                                className=' p-1 h-fit cursor-pointer'
+                                onClick={() => { window.open('tel:+919999999999', '_self'); }}
+                            >
+                                +91-9999999999
+                            </Button>
                         </div>
                         <div className=' flex flex-row gap-1'>
                             <span className=' font-bold'>Email: </span>
