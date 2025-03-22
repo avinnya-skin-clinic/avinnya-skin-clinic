@@ -116,7 +116,7 @@ const Page = () => {
                     {/* Information Section */}
                     <div className="w-full max-w-4xl h-fit flex flex-col justify-center gap-3 p-8 max-md:w-full bg-green-100 rounded-2xl">
                         <h2 className="text-2xl font-semibold mb-2 underline underline-offset-2 text-center">
-                            Skin Brightening/Lightening
+                            Skin Brightening
                         </h2>
                         <p className="text-lg text-gray-700">
                             Skin brightening treatments focus on enhancing skin luminosity, reducing dullness, and improving overall skin tone. Unlike skin bleaching, which lightens skin color, skin brightening focuses on restoring natural radiance.
