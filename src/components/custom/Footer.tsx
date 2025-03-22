@@ -1,3 +1,4 @@
+// System Components import
 import Link from 'next/link';
 import React from 'react';
 
@@ -43,7 +44,7 @@ const Footer = () => {
                 <div className=' w-full h-[1px] bg-gray-700 my-5'></div>
 
                 {/* Footer Bottom */}
-                <div className="my-8 text-center">
+                <div className="mt-8 text-center">
                     <p className="text-sm">&copy; 2025 Avinnya Skin Clinic. All Rights Reserved. Developed By <Link href={'https://github.com/KushalHarsora'} className=' font-bold cursor-pointer'>Kushal Harsora</Link></p>
                 </div>
             </div>

@@ -140,3 +140,15 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+/* Global selection style */
+::selection {
+  background-color: #ff9b3e;
+  color: white;
+}
+
+/* Optional: For Webkit-based browsers (Safari, Chrome, etc.) */
+::-webkit-selection {
+  background-color: #ff9b3e;
+  color: white;
+}

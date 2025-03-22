@@ -59,7 +59,7 @@ const Reviews = () => {
                         {reviews.map((review, index) => (
                             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                                 <div className="p-1">
-                                    <Card className=' bg-green-50 border-none'>
+                                    <Card className=' bg-green-100 border-none'>
                                         <CardContent className=" h-[20vh] flex flex-col items-center justify-center gap-3 p-6">
                                             <h1 className=' text-xl font-bold'>{review.name}</h1>
                                             <span className="text-sm text-justify">{review.text}</span>

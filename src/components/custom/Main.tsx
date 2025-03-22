@@ -40,8 +40,8 @@ const Main = () => {
                             </h1>
 
                             {/* Description */}
-                            <p className='text-sm max-md:text-xs text-white text-justify px-4'>
-                                At Avinnya Skin Clinic, we offer personalized skincare treatments that cater to your unique needs. Whether you&apos;re looking for acne treatments, anti-aging solutions, or rejuvenating facials, our experienced dermatologists are here to help you achieve glowing, healthy skin.
+                            <p className='text-lg max-md:text-sm text-white text-justify px-4'>
+                                Reveal your Radiant Best with Avinnya&apos;s Skin Care Clinic
                             </p>
 
                             {/* Book Appointment Button */}
