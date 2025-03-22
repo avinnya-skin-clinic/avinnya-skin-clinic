@@ -29,7 +29,7 @@ const Page = () => {
         </section>
 
         {/* Hair Thinning Section */}
-        <section className=" my-6 h-auto w-screen overflow-x-hidden flex flex-row max-md:flex-col justify-evenly items-center box-border p-6">
+        <section id='hair-thinning' className=" my-6 h-auto w-screen overflow-x-hidden flex flex-row max-md:flex-col justify-evenly items-center box-border p-6">
           {/* Image Section */}
           <div className="w-full max-w-lg h-[50vh] max-md:w-[100%] max-md:h-[auto] flex items-center justify-center">
             <Image
@@ -83,7 +83,7 @@ const Page = () => {
         </section>
 
         {/* Hair Loss PRP Treatment Section */}
-        <section className=" my-6 h-auto w-screen overflow-x-hidden flex flex-row-reverse max-md:flex-col justify-evenly items-center box-border p-6">
+        <section id='hair-loss' className=" my-6 h-auto w-screen overflow-x-hidden flex flex-row-reverse max-md:flex-col justify-evenly items-center box-border p-6">
           {/* Image Section */}
           <div className="w-full max-w-lg h-[50vh] max-md:w-[100%] max-md:h-[auto] flex items-center justify-center">
             <Image
@@ -136,7 +136,7 @@ const Page = () => {
         </section>
 
         {/* Vampire Facial Section */}
-        <section className="my-6 h-auto w-screen overflow-x-hidden flex flex-row max-md:flex-col justify-evenly items-center box-border p-6">
+        <section id='vampire-facial' className="my-6 h-auto w-screen overflow-x-hidden flex flex-row max-md:flex-col justify-evenly items-center box-border p-6">
           {/* Image Section */}
           <div className="w-full max-w-lg h-[50vh] max-md:w-[100%] max-md:h-[auto] flex items-center justify-center">
             <Image
@@ -188,7 +188,7 @@ const Page = () => {
             </ol>
           </div>
         </section>
-        
+
         <Footer />
       </main>
     </React.Fragment>

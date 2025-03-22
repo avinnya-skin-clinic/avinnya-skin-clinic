@@ -85,7 +85,7 @@ const Navbar = () => {
                                     </span>
                                     <span className=' flex flex-col gap-2 w-[300px]'>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/hair-thinning-prp-treatment'>
+                                            <Link href='/hair-treatment#hair-thinning'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Hair Thinning PRP Treatment
                                                 </h3>
@@ -95,7 +95,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/hair-thinning-prp-treatment'>
+                                            <Link href='/hair-treatment#hair-loss'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Hair Loss PRP Treatment
                                                 </h3>
@@ -105,7 +105,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/vampire-facial'>
+                                            <Link href='/hair-treatment#vampire-facial'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Vampire Facial
                                                 </h3>
