@@ -199,7 +199,7 @@ const Navbar = () => {
                                             <NavigationMenuLink className="overflow-hidden" asChild>
                                                 <Link
                                                     className="flex h-full w-full select-none flex-col justify-end rounded-md border border-orange-400 bg-orange-300 relative"
-                                                    href="/hair-treatment"
+                                                    href="/personalized-nutrition"
                                                 >
                                                     <Image
                                                         src={'/assets/nutrition.jpg'}
