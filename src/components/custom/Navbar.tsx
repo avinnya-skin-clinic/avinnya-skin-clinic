@@ -413,8 +413,8 @@ const Navbar = () => {
                 <Image
                     src={'/logo.svg'}
                     alt='logo'
-                    width={250}
-                    height={250}
+                    width={225}
+                    height={225}
                     className=' cursor-pointer'
                     onClick={() => router.push('/')}
                 />
@@ -423,7 +423,7 @@ const Navbar = () => {
                         <AlignLeft style={{ strokeWidth: 1.125 }} />
                     </DrawerTrigger>
                     <DrawerContent>
-                        <div className=' w-full py-2 px-1.5 flex flex-col justify-center items-center gap-7'>
+                        <div className=' w-full py-2 px-6 flex flex-col justify-center items-center gap-7'>
                         <div className=' w-full h-full'>
                             <DrawerHeader>
                                 <DrawerTitle className=' text-base font-bold text-center text-orange-400'>
