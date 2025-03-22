@@ -389,44 +389,38 @@ const Navbar = () => {
                 </NavigationMenu>
 
                 <div className=' flex flex-row justify-center items-center gap-2'>
-                    <Button
+                    {/* <Button
                         variant={'default'}
                         className=' cursor-pointer p-3 bg-transparent border-[2px] border-orange-400 text-orange-400 hover:bg-orange-300 duration-200 ease-in-out hover:text-white'
                         onClick={() => router.push('/book-an-appointment')}
                     >
                         Book an Appointment
-                    </Button>
-
+                    </Button> */}
                     <Button
                         variant={'default'}
-                        className=' cursor-pointer p-3 bg-transparent border-[2px] border-orange-400 text-orange-400 hover:bg-orange-300 duration-200 ease-in-out hover:text-white'
+                        className=' flex justify-center items-center text-lg cursor-pointer p-5 rounded-none bg-orange-400 border-[2px] border-orange-400 text-white font-medium hover:bg-white hover:text-orange-400 hover:border-[2px] hover:border-orange-400 duration-200 ease-in-out'
                         onClick={() => { window.open('tel:+919108000000', '_self'); }}
                     >
-                        Call Now
+                        CALL NOW
                     </Button>
                 </div>
             </section>
 
             {/* Navbar for mobile and small media devices */}
             <section
-                className=' custom-container-mobile h-15 w-screen border-b-[1px] border-b-white flex justify-between items-center shadow-md shadow-orange-200 p-[5vw]'
+                className=' custom-container-mobile h-[75px] w-screen border-b-[1px] border-b-white flex justify-between items-center shadow-md shadow-orange-200 p-[5vw]'
             >
                 <Image
                     src={'/logo.svg'}
                     alt='logo'
-                    width={200}
-                    height={200}
+                    width={250}
+                    height={250}
                     className=' cursor-pointer'
                     onClick={() => router.push('/')}
                 />
                 <Drawer>
-                    <DrawerTrigger>
-                        <Button
-                            variant={'ghost'}
-                            className=' cursor-pointer'
-                        >
-                            <AlignLeft />
-                        </Button>
+                    <DrawerTrigger className=' cursor-pointer'>
+                        <AlignLeft style={{ strokeWidth: 1.125 }} />
                     </DrawerTrigger>
                     <DrawerContent>
                         <div className=' w-full py-2 px-1.5 flex flex-col justify-center items-center gap-7'>

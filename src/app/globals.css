@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
@@ -132,4 +133,10 @@
   @media (min-width: 1400px) {
     display: none;
   }
+}
+
+:root {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
