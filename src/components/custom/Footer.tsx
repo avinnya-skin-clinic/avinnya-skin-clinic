@@ -1,8 +1,14 @@
+'use client';
+
 // System Components import
 import Link from 'next/link';
 import React from 'react';
+import { Button } from '../ui/button';
 
 const Footer = () => {
+
+    const location = "Mumbai";
+
     return (
         <footer className="w-full bg-[#fc843f] text-white py-8">
             {/* Main Wrapper */}
@@ -15,7 +21,7 @@ const Footer = () => {
                 </div>
 
                 {/* Links and Location */}
-                <div className="flex flex-col md:flex-row justify-evenly items-center gap-8 max-md:gap-4">
+                <div className="flex flex-col md:flex-row justify-evenly items-stretch gap-8 max-md:gap-4">
 
                     {/* Quick Links Section */}
                     <div className="text-center flex flex-col justify-center items-center gap-1 max-md:text-left">
@@ -24,6 +30,30 @@ const Footer = () => {
                         <Link href="/skin-rejuvenation" className="text-base font-medium hover:underline">Skin Rejuvenation</Link>
                         <Link href="/personalized-nutrition" className="text-base font-medium hover:underline">Personalized Nutrition</Link>
                         <Link href="/advanced-laser-treatments" className="text-base font-medium hover:underline">Advanced Laser Treatments</Link>
+                    </div>
+
+                    <div className="text-center flex flex-col justify-center items-center gap-1 max-md:text-left">
+                        <h3 className="text-2xl font-semibold underline">Contact Us</h3>
+                        <div className=' flex flex-row gap-1'>
+                            <span className=' font-bold'>Address: </span>
+                            <p>{location}</p>
+                        </div>
+                        <div className=' flex flex-row gap-1'>
+                            <span className=' font-bold'>Phone: </span>
+                            <p>+91-9999999999</p>
+                        </div>
+                        <div className=' flex flex-row gap-1'>
+                            <span className=' font-bold'>Email: </span>
+                            <Button
+                                className="p-1 h-fit cursor-pointer"
+                                variant={"link"}
+                                onClick={() => {
+                                    window.location.href = 'mailto:avinnyaskinclinic.info@gmail.com';
+                                }}
+                            >
+                                avinnyaskinclinic.info@gmail.com
+                            </Button>
+                        </div>
                     </div>
 
                     {/* Location Map Section */}
