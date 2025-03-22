@@ -1,3 +1,4 @@
+import Main from '@/components/custom/Main'
 import Navbar from '@/components/custom/Navbar'
 import React from 'react'
 
@@ -6,6 +7,7 @@ const Page = () => {
     <React.Fragment>
       <main className=' h-screen w-screen overflow-x-hidden overflow-y-auto'>
         <Navbar />
+        <Main />
       </main>
     </React.Fragment>
   )

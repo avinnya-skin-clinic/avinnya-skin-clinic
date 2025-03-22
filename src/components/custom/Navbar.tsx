@@ -2,6 +2,8 @@
 
 // System Components import
 import React from 'react'
+import Image from 'next/image';
+import Link from 'next/link';
 
 // UI Components import
 import {
@@ -19,8 +21,6 @@ import {
     DrawerTitle,
     DrawerTrigger
 } from '../ui/drawer';
-import Image from 'next/image';
-import Link from 'next/link';
 import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
 import { AlignLeft } from 'lucide-react';
@@ -37,7 +37,7 @@ const Navbar = () => {
 
             {/* Navbar for PC and wide media devices */}
             <section
-                className=' custom-container h-22 w-screen border-b-[1px] border-b-white flex justify-evenly items-center shadow-md shadow-orange-200'
+                className=' sticky top-0 left-0 custom-container h-22 w-screen border-b-[1px] border-b-white flex justify-evenly items-center shadow-lg shadow-orange-200 bg-white z-20'
             >
                 <Image
                     src={'/logo.svg'}
@@ -389,13 +389,6 @@ const Navbar = () => {
                 </NavigationMenu>
 
                 <div className=' flex flex-row justify-center items-center gap-2'>
-                    {/* <Button
-                        variant={'default'}
-                        className=' cursor-pointer p-3 bg-transparent border-[2px] border-orange-400 text-orange-400 hover:bg-orange-300 duration-200 ease-in-out hover:text-white'
-                        onClick={() => router.push('/book-an-appointment')}
-                    >
-                        Book an Appointment
-                    </Button> */}
                     <Button
                         variant={'default'}
                         className=' flex justify-center items-center text-lg cursor-pointer p-5 rounded-none bg-orange-400 border-[2px] border-orange-400 text-white font-medium hover:bg-white hover:text-orange-400 hover:border-[2px] hover:border-orange-400 duration-200 ease-in-out'
