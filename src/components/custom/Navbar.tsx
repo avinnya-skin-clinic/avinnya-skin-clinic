@@ -130,7 +130,7 @@ const Navbar = () => {
                                             <NavigationMenuLink className="overflow-hidden" asChild>
                                                 <Link
                                                     className="flex h-full w-full select-none flex-col justify-end rounded-md border border-orange-400 bg-orange-300 relative"
-                                                    href="/hair-treatment"
+                                                    href="/skin-rejuvenation"
                                                 >
                                                     <Image
                                                         src={'/assets/skin-rejuvenation.jpg'}
@@ -154,7 +154,7 @@ const Navbar = () => {
                                     </span>
                                     <span className=' flex flex-col gap-2 w-[300px]'>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/hair-thinning-prp-treatment'>
+                                            <Link href='/skin-rejuvenation#skin-pigmentation-treatment'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Skin Pigmentation Treatment
                                                 </h3>
@@ -164,7 +164,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/hair-thinning-prp-treatment'>
+                                            <Link href='/skin-rejuvenation#skin-brightening'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Skin Brightening/Lightening
                                                 </h3>
@@ -174,7 +174,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/vampire-facial'>
+                                            <Link href='/skin-rejuvenation#skin-tanning'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Skin Tanning Treatment
                                                 </h3>

@@ -2,10 +2,15 @@
 
 import Footer from '@/components/custom/Footer';
 import Navbar from '@/components/custom/Navbar';
+import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
 const Page = () => {
+
+  const router = useRouter();
+
   return (
     <React.Fragment>
       <main className="h-fit w-screen max-w-screen overflow-x-hidden overflow-y-auto">
@@ -79,6 +84,15 @@ const Page = () => {
               <li><strong>Injection Process:</strong> The PRP is injected into targeted areas of the scalp using fine needles.</li>
               <li><strong>Post-Treatment Care:</strong> Mild scalp massage and avoidance of harsh hair treatments are recommended.</li>
             </ol>
+
+            {/* Book Appointment Button */}
+            <Button
+              variant={'default'}
+              className='my-5 max-md:my-3 flex justify-center items-center text-lg cursor-pointer p-5 max-md:p-3 rounded-none border-none bg-white text-orange-400 font-medium hover:text-white shadow-md'
+              onClick={() => router.push('/book-an-appointment')}
+            >
+              Book an Appointment
+            </Button>
           </div>
         </section>
 
@@ -132,6 +146,15 @@ const Page = () => {
               <li><strong>Injection Process:</strong> PRP is injected into areas of the scalp experiencing hair loss.</li>
               <li><strong>Post-Treatment Guidance:</strong> Patients are advised to avoid excessive sun exposure and hair treatments.</li>
             </ol>
+
+            {/* Book Appointment Button */}
+            <Button
+              variant={'default'}
+              className='my-5 max-md:my-3 flex justify-center items-center text-lg cursor-pointer p-5 max-md:p-3 rounded-none border-none bg-white text-orange-400 font-medium hover:text-white shadow-md'
+              onClick={() => router.push('/book-an-appointment')}
+            >
+              Book an Appointment
+            </Button>
           </div>
         </section>
 
@@ -186,6 +209,15 @@ const Page = () => {
               <li><strong>Microneedling or Injection:</strong> The PRP is either microneedled into the skin or injected into targeted areas to stimulate collagen production.</li>
               <li><strong>Post-Treatment Care:</strong> Mild redness and swelling may occur, but this typically resolves within a few hours to a day. Avoid sun exposure and harsh skincare treatments post-treatment.</li>
             </ol>
+
+            {/* Book Appointment Button */}
+            <Button
+              variant={'default'}
+              className='my-5 max-md:my-3 flex justify-center items-center text-lg cursor-pointer p-5 max-md:p-3 rounded-none border-none bg-white text-orange-400 font-medium hover:text-white shadow-md'
+              onClick={() => router.push('/book-an-appointment')}
+            >
+              Book an Appointment
+            </Button>
           </div>
         </section>
 
