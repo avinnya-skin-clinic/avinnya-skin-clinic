@@ -44,7 +44,7 @@ const Page = () => {
                             layout="intrinsic"
                             width={500}
                             height={500}
-                            priority
+                            loading='lazy'
                         />
                     </div>
 
@@ -106,10 +106,9 @@ const Page = () => {
                             src="/assets/skin-brightening.jpg"
                             alt="Skin Brightening"
                             className="w-full h-full object-cover rounded-lg"
-                            layout="intrinsic"
                             width={500}
                             height={500}
-                            priority
+                            loading='lazy'
                         />
                     </div>
 
@@ -162,7 +161,7 @@ const Page = () => {
                             layout="intrinsic"
                             width={500}
                             height={500}
-                            priority
+                            loading='lazy'
                         />
                     </div>
 

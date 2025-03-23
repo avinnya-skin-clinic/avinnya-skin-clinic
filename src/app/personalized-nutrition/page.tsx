@@ -33,7 +33,7 @@ const Page = () => {
                     </p>
                 </section>
 
-                {/* Skin Pigmentation Treatment Section */}
+                {/* Weight Loss Treatment Section */}
                 <section id='weight-loss' className=" my-6 h-auto w-screen overflow-x-hidden flex flex-row max-md:flex-col justify-evenly items-center box-border p-6">
                     {/* Image Section */}
                     <div className="w-full max-w-lg h-[50vh] max-md:w-[100%] max-md:h-[auto] flex items-center justify-center">
@@ -41,10 +41,9 @@ const Page = () => {
                             src="/assets/weight-loss.jpg"
                             alt="Personalized Nutrition"
                             className="w-full h-full object-cover rounded-lg"
-                            layout="intrinsic"
                             width={500}
                             height={500}
-                            priority
+                            loading='lazy'
                         />
                     </div>
 
