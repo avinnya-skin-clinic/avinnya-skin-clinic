@@ -15,7 +15,7 @@ const Main = () => {
     return (
         <React.Fragment>
             <section className='h-fit max-md:h-auto w-full overflow-hidden'>
-                <section className='h-fit w-full bg-[#ff9b3e] relative'>
+                <section className='h-fit w-full bg-[#F5F5DC] relative'>
                     <div className='relative w-full h-auto'>
                         {/* Background Image */}
                         <div className='absolute top-0 right-0 z-0'>
@@ -32,7 +32,7 @@ const Main = () => {
                         {/* Main Content */}
                         <div className='w-full h-[87.5vh] max-md:h-[75vh] flex flex-col justify-start items-center translate-y-[25%] gap-4 max-md:gap-2 px-4 py-8 max-w-4xl z-10'>
                             {/* Heading */}
-                            <h2 className='text-xl md:text-3xl font-medium text-white tracking-[0.25em] text-center'>
+                            <h2 className='text-xl md:text-3xl font-medium text-orange-400 tracking-[0.25em] text-center'>
                                 WELCOME TO
                             </h2>
                             <h1 className='text-4xl md:text-7xl font-semibold text-center text-black'>
@@ -40,7 +40,7 @@ const Main = () => {
                             </h1>
 
                             {/* Description */}
-                            <p className='text-lg max-md:text-sm text-white text-justify px-4'>
+                            <p className='text-lg max-md:text-sm text-orange-400 text-justify px-4'>
                                 Reveal your Radiant Best with Avinnya&apos;s Skin Care Clinic
                             </p>
 

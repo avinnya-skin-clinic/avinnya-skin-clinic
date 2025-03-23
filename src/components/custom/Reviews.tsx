@@ -39,7 +39,7 @@ const Reviews = () => {
     ];
     return (
         <React.Fragment>
-            <div className=' h-fit py-8 px-3 w-screen flex flex-col justify-center items-center gap-5 bg-orange-100'>
+            <div className=' h-fit py-8 px-3 w-screen flex flex-col justify-center items-center gap-5 bg-[#FFF5E1]'>
                 <h1 className=' text-3xl max-md:text-2xl font-semibold'>
                     See What our Patients talk about us
                 </h1>
