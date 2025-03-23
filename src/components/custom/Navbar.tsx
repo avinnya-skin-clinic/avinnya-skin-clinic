@@ -298,7 +298,7 @@ const Navbar = () => {
                                             <NavigationMenuLink className="overflow-hidden" asChild>
                                                 <Link
                                                     className="flex h-full w-full select-none flex-col justify-end rounded-md border border-orange-400 bg-orange-300 relative"
-                                                    href="/hair-treatment"
+                                                    href="/advanced-laser-treatments"
                                                 >
                                                     <Image
                                                         src={'/assets/laser-treatment.jpg'}
@@ -313,7 +313,7 @@ const Navbar = () => {
                                                             Advanced Laser Treatments
                                                         </div>
                                                         <p className="text-[12.75px] text-white leading-tight">
-                                                            At Avinnya Skin Clinic, we offer cutting-edge laser treatments designed to enhance your beauty, improve skin health, and achieve body sculpting goals.
+                                                            At Avinnya Skin Clinic, we provide advanced laser treatments to enhance beauty, improve skin health, and achieve body sculpting goals.
                                                         </p>
                                                     </div>
                                                 </Link>
@@ -322,7 +322,7 @@ const Navbar = () => {
                                     </span>
                                     <span className='  grid grid-cols-2 gap-2 w-[500px]'>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/hair-thinning-prp-treatment'>
+                                            <Link href='/advanced-laser-treatments#hifu'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Weight Loss with HIFU
                                                 </h3>
@@ -332,7 +332,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/hair-thinning-prp-treatment'>
+                                            <Link href='/advanced-laser-treatments#carbon'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Carbon Laser
                                                 </h3>
@@ -342,7 +342,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/vampire-facial'>
+                                            <Link href='/advanced-laser-treatments#tattoo'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Tattoo Removal
                                                 </h3>
@@ -352,7 +352,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/vampire-facial'>
+                                            <Link href='/advanced-laser-treatments#laser-hair'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Laser Hair Removal
                                                 </h3>
@@ -362,7 +362,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/vampire-facial'>
+                                            <Link href='/advanced-laser-treatments#skin-brightening'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Skin Brightening
                                                 </h3>
@@ -372,7 +372,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/vampire-facial'>
+                                            <Link href='/advanced-laser-treatments#freckles'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Freckles Treatment
                                                 </h3>
