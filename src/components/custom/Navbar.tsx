@@ -223,7 +223,7 @@ const Navbar = () => {
                                     </span>
                                     <span className=' gap-2 w-[500px] grid-cols-2 grid'>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/hair-thinning-prp-treatment'>
+                                            <Link href='/personalized-nutrition#weight-loss'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Weight Loss Nutrition
                                                 </h3>
@@ -233,7 +233,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/hair-thinning-prp-treatment'>
+                                            <Link href='/personalized-nutrition#weight-gain'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Weight Gain Nutrition
                                                 </h3>
@@ -243,7 +243,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/vampire-facial'>
+                                            <Link href='/personalized-nutrition#fat-loss'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Fat Loss Nutrition
                                                 </h3>
@@ -253,7 +253,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/vampire-facial'>
+                                            <Link href='/personalized-nutrition#adult'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Adult Nutrition
                                                 </h3>
@@ -263,7 +263,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/vampire-facial'>
+                                            <Link href='/personalized-nutrition#child'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Pediatric Nutrition
                                                 </h3>
@@ -273,7 +273,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
-                                            <Link href='/vampire-facial'>
+                                            <Link href='/personalized-nutrition#sports'>
                                                 <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
                                                     Sports Nutrition
                                                 </h3>

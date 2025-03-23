@@ -2,6 +2,7 @@
 
 import Footer from '@/components/custom/Footer';
 import Navbar from '@/components/custom/Navbar';
+import WhyChooseUs from '@/components/custom/WhyChooseUs';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
@@ -221,6 +222,7 @@ const Page = () => {
           </div>
         </section>
 
+        <WhyChooseUs />
         <Footer />
       </main>
     </React.Fragment>
