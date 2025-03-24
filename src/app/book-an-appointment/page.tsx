@@ -44,7 +44,9 @@ const formSchema = z.object({
     }),
     email: z.string().email(),
     phone: z.string().min(10, {
-        message: "Please Enter Valid Phone Number"
+        message: "Please Enter Valid Phone Number",
+    }).regex(/^[0-9]+$/, {
+        message: "Phone number must be numeric",
     }),
     purpose: z.string(),
     message: z.string().optional()
@@ -104,7 +106,7 @@ const Page = () => {
                                             <FormItem>
                                                 <FormLabel>Name</FormLabel>
                                                 <FormControl>
-                                                    <Input placeholder="name" type='text' {...field} />
+                                                    <Input placeholder="John Doe" type='text' {...field} />
                                                 </FormControl>
                                                 <FormMessage />
                                             </FormItem>
@@ -130,7 +132,10 @@ const Page = () => {
                                             <FormItem>
                                                 <FormLabel>Phone</FormLabel>
                                                 <FormControl>
-                                                    <Input placeholder="9999999999" {...field} />
+                                                    <div className=' w-full flex flex-row justify-normal items-center gap-2'>
+                                                    <span className=' border border-input px-3 py-1.5 rounded-md'>+91</span>
+                                                    <Input type='tel' {...field} />
+                                                    </div>
                                                 </FormControl>
                                                 <FormMessage />
                                             </FormItem>

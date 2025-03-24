@@ -39,7 +39,7 @@ const Reviews = () => {
     ];
     return (
         <React.Fragment>
-            <div className=' h-fit py-8 px-3 w-screen flex flex-col justify-center items-center gap-5 bg-[#FFF5E1]'>
+            <div className=' h-fit py-8 px-3 w-screen flex flex-col justify-center items-center gap-5 bg-[#D8CAB8]'>
                 <h1 className=' text-3xl max-md:text-2xl font-semibold'>
                     See What our Patients talk about us
                 </h1>
@@ -59,7 +59,7 @@ const Reviews = () => {
                         {reviews.map((review, index) => (
                             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                                 <div className="p-1">
-                                    <Card className=' bg-green-100 border-none'>
+                                    <Card className=' bg-white border-none'>
                                         <CardContent className=" h-[20vh] flex flex-col items-center justify-center gap-3 p-6">
                                             <h1 className=' text-xl font-bold'>{review.name}</h1>
                                             <span className="text-sm text-justify">{review.text}</span>

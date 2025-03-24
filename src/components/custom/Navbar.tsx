@@ -86,7 +86,7 @@ const Navbar = () => {
                                     <span className=' flex flex-col gap-2 w-[300px]'>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/hair-treatment#hair-thinning'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Hair Thinning PRP Treatment
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -96,7 +96,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/hair-treatment#hair-loss'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Hair Loss PRP Treatment
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -106,7 +106,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/hair-treatment#vampire-facial'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Vampire Facial
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -155,7 +155,7 @@ const Navbar = () => {
                                     <span className=' flex flex-col gap-2 w-[300px]'>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/skin-rejuvenation#skin-pigmentation-treatment'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Skin Pigmentation Treatment
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -165,7 +165,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/skin-rejuvenation#skin-brightening'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Skin Brightening/Lightening
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -175,7 +175,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/skin-rejuvenation#skin-tanning'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Skin Tanning Treatment
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -224,7 +224,7 @@ const Navbar = () => {
                                     <span className=' gap-2 w-[500px] grid-cols-2 grid'>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/personalized-nutrition#weight-loss'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Weight Loss Nutrition
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -234,7 +234,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/personalized-nutrition#weight-gain'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Weight Gain Nutrition
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -244,7 +244,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/personalized-nutrition#fat-loss'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Fat Loss Nutrition
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -254,7 +254,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/personalized-nutrition#adult'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Adult Nutrition
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -264,7 +264,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/personalized-nutrition#child'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Pediatric Nutrition
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -274,7 +274,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/personalized-nutrition#sports'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Sports Nutrition
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -323,7 +323,7 @@ const Navbar = () => {
                                     <span className='  grid grid-cols-2 gap-2 w-[500px]'>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/advanced-laser-treatments#hifu'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Weight Loss with HIFU
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -333,7 +333,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/advanced-laser-treatments#carbon'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Carbon Laser
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -343,7 +343,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/advanced-laser-treatments#tattoo'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Tattoo Removal
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -353,7 +353,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/advanced-laser-treatments#laser-hair'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Laser Hair Removal
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -363,7 +363,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/advanced-laser-treatments#skin-brightening'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Skin Brightening
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>
@@ -373,7 +373,7 @@ const Navbar = () => {
                                         </li>
                                         <li className=' border-[1px] border-orange-400 p-2 rounded-md hover:bg-orange-100'>
                                             <Link href='/advanced-laser-treatments#freckles'>
-                                                <h3 className=' text-base font-semibold leading-none underline decoration-wavy decoration-gray-300 my-[7px]'>
+                                                <h3 className=' text-base font-semibold leading-none  my-[7px]'>
                                                     Freckles Treatment
                                                 </h3>
                                                 <p className=' line-clamp-2 text-sm leading-snug font-medium text-gray-900'>

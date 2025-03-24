@@ -7,85 +7,86 @@ import { Button } from '../ui/button';
 
 const Footer = () => {
 
-    const location = "Mumbai";
+  const location = "Pune";
 
-    return (
-        <footer className="w-full bg-[#fc843f] text-white py-8">
-            {/* Main Wrapper */}
-            <div className="max-w-7xl mx-auto px-6">
+  return (
+    <footer className="w-full bg-[#F5F5DC] text-black py-8">
+      {/* Main Wrapper */}
+      <div className="max-w-7xl mx-auto px-6">
 
-                {/* Company Info Section */}
-                <div className="text-center max-md:text-left mb-6">
-                    <h3 className="text-2xl font-semibold">Avinnya Skin Clinic</h3>
-                    <p className="text-sm">Providing personalized skincare treatments with care and professionalism. Located in Mumbai, India.</p>
-                </div>
+        {/* Company Info Section */}
+        <div className="text-center max-md:text-left mb-6">
+          <h3 className="text-2xl font-semibold">Avinnya Skin Clinic</h3>
+          <p className="text-sm">Providing personalized skincare treatments with care and professionalism. Located in Mumbai, India.</p>
+        </div>
 
-                {/* Links and Location */}
-                <div className="flex flex-col md:flex-row justify-evenly items-stretch gap-8 max-md:gap-4">
+        {/* Links and Location */}
+        <div className="flex flex-col md:flex-row justify-evenly items-stretch gap-8 max-md:gap-4">
 
-                    {/* Quick Links Section */}
-                    <div className="text-center flex flex-col justify-center items-center gap-1 max-md:text-left">
-                        <h3 className="text-2xl font-semibold underline">Quick Links</h3>
-                        <Link href="/hair-treatment" className="text-base font-medium hover:underline">Hair Treatments</Link>
-                        <Link href="/skin-rejuvenation" className="text-base font-medium hover:underline">Skin Rejuvenation</Link>
-                        <Link href="/personalized-nutrition" className="text-base font-medium hover:underline">Personalized Nutrition</Link>
-                        <Link href="/advanced-laser-treatments" className="text-base font-medium hover:underline">Advanced Laser Treatments</Link>
-                    </div>
+          {/* Quick Links Section */}
+          <div className="text-center flex flex-col justify-center items-start gap-1 max-md:text-left">
+            <h3 className="text-2xl font-semibold underline">Quick Links</h3>
+            <Link href="/hair-treatment" className="text-orange-600 text-base font-medium hover:underline">Hair Treatments</Link>
+            <Link href="/skin-rejuvenation" className="text-orange-600 text-base font-medium hover:underline">Skin Rejuvenation</Link>
+            <Link href="/personalized-nutrition" className="text-orange-600 text-base font-medium hover:underline">Personalized Nutrition</Link>
+            <Link href="/advanced-laser-treatments" className="text-orange-600 text-base font-medium hover:underline">Advanced Laser Treatments</Link>
+          </div>
 
-                    <div className="text-center flex flex-col justify-center items-center gap-1 max-md:text-left">
-                        <h3 className="text-2xl font-semibold underline">Contact Us</h3>
-                        <div className=' flex flex-row gap-1'>
-                            <span className=' font-bold'>Address: </span>
-                            <p>{location}</p>
-                        </div>
-                        <div className=' flex flex-row gap-1'>
-                            <span className=' font-bold'>Phone: </span>
-                            <Button
-                                variant={'link'}
-                                className=' p-1 h-fit cursor-pointer'
-                                onClick={() => { window.open('tel:+919999999999', '_self'); }}
-                            >
-                                +91-9999999999
-                            </Button>
-                        </div>
-                        <div className=' flex flex-row gap-1'>
-                            <span className=' font-bold'>Email: </span>
-                            <Button
-                                className="p-1 h-fit cursor-pointer"
-                                variant={"link"}
-                                onClick={() => {
-                                    window.location.href = 'mailto:avinnyaskinclinic.info@gmail.com';
-                                }}
-                            >
-                                avinnyaskinclinic.info@gmail.com
-                            </Button>
-                        </div>
-                    </div>
-
-                    {/* Location Map Section */}
-                    <div className="w-full md:max-w-xl">
-                        <h5 className="text-lg font-semibold text-center md:text-left">Our Location</h5>
-                        <div className="relative pb-[56.25%]">
-                            <iframe
-                                title="Avinnya Skin Clinic Location"
-                                src="https://www.openstreetmap.org/export/embed.html?bbox=72.8745%2C19.0730%2C72.8820%2C19.0795&layer=mapnik&marker=19.0760%2C72.8777"
-                                width="100%"
-                                height="100%"
-                                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-                            ></iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <div className=' w-full h-[1px] bg-gray-700 my-5'></div>
-
-                {/* Footer Bottom */}
-                <div className="mt-8 text-center">
-                    <p className="text-sm">&copy; 2025 Avinnya Skin Clinic. All Rights Reserved. Developed By <Link href={'https://github.com/KushalHarsora'} className=' font-bold cursor-pointer'>Kushal Harsora</Link></p>
-                </div>
+          <div className="text-center flex flex-col justify-center items-start gap-1 max-md:text-left">
+            <h3 className="text-2xl font-semibold underline">Contact Us</h3>
+            <div className=' flex flex-row gap-1'>
+              <span className=' font-bold'>Address: </span>
+              <p className=' text-orange-600 font-medium'>{location}</p>
             </div>
-        </footer>
-    );
+            <div className=' flex flex-row gap-1'>
+              <span className=' font-bold'>Phone: </span>
+              <Button
+                variant={'link'}
+                className='text-orange-600 p-1 h-fit cursor-pointer font-medium'
+                onClick={() => { window.open('tel:+919999999999', '_self'); }}
+              >
+                +91-9999999999
+              </Button>
+            </div>
+            <div className=' flex flex-row gap-1'>
+              <span className=' font-bold'>Email: </span>
+              <Button
+                className="text-orange-600 p-1 h-fit cursor-pointer font-medium"
+                variant={"link"}
+                onClick={() => {
+                  window.location.href = 'mailto:avinnyaskinclinic.info@gmail.com';
+                }}
+              >
+                avinnyaskinclinic.info@gmail.com
+              </Button>
+            </div>
+          </div>
+
+          {/* Location Map Section */}
+          <div className="w-full md:max-w-xl">
+            <h5 className="text-lg font-semibold text-center md:text-left">Our Location</h5>
+            <div className="relative pb-[56.25%]">
+              <iframe
+                title="Avinnya Skin Clinic Location"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=73.8067%2C18.4804%2C73.9067%2C18.5604&layer=mapnik&marker=18.5204%2C73.8567"
+                width="100%"
+                height="100%"
+                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+              ></iframe>
+
+            </div>
+          </div>
+        </div>
+
+        <div className=' w-full h-[1px] bg-gray-700 my-5'></div>
+
+        {/* Footer Bottom */}
+        <div className="mt-8 text-center">
+          <p className="text-sm">&copy; 2025 Avinnya Skin Clinic. All Rights Reserved. Developed By <Link href={'https://github.com/KushalHarsora'} className=' font-bold cursor-pointer'>Kushal Harsora</Link></p>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;

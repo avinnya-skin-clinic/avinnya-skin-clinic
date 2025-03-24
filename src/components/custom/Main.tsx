@@ -32,15 +32,15 @@ const Main = () => {
                         {/* Main Content */}
                         <div className='w-full h-[87.5vh] max-md:h-[75vh] flex flex-col justify-start items-center translate-y-[25%] gap-4 max-md:gap-2 px-4 py-8 max-w-4xl z-10'>
                             {/* Heading */}
-                            <h2 className='text-xl md:text-3xl font-medium text-orange-400 tracking-[0.25em] text-center'>
+                            <h2 className='text-xl md:text-3xl font-semibold text-orange-400 tracking-[0.25em] text-center'>
                                 WELCOME TO
                             </h2>
-                            <h1 className='text-4xl md:text-7xl font-semibold text-center text-black'>
+                            <h1 className='text-4xl md:text-7xl font-bold text-center text-black'>
                                 AVINNYA SKIN CLINIC
                             </h1>
 
                             {/* Description */}
-                            <p className='text-lg max-md:text-sm text-orange-400 text-justify px-4'>
+                            <p className='text-lg max-md:text-sm text-orange-400 text-justify px-4 font-medium'>
                                 Reveal your Radiant Best with Avinnya&apos;s Skin Care Clinic
                             </p>
 
