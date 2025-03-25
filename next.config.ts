@@ -1,9 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   images: {
-    domains: ['www.openstreetmap.org'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.openstreetmap.org',
+      },
+    ],
   },
   reactStrictMode: false,
 };

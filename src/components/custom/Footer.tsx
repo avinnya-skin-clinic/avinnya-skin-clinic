@@ -65,15 +65,14 @@ const Footer = () => {
           {/* Location Map Section */}
           <div className="w-full md:max-w-xl">
             <h5 className="text-lg font-semibold text-center md:text-left">Our Location</h5>
-            <div className="relative pb-[56.25%]">
+            <div className="relative w-full h-[400px] rounded-lg shadow-lg">
               <iframe
                 title="Avinnya Skin Clinic Location"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=73.8067%2C18.4804%2C73.9067%2C18.5604&layer=mapnik&marker=18.5204%2C73.8567"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=73.9430%2C18.4743%2C73.9630%2C18.4943&layer=mapnik&marker=18.4843%2C73.9530"
                 width="100%"
                 height="100%"
                 className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
               ></iframe>
-
             </div>
           </div>
         </div>

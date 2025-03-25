@@ -24,9 +24,10 @@ const Main = () => {
                                 alt='main page'
                                 width={540}
                                 height={640}
-                                objectFit='contain'
+                                style={{ objectFit: 'contain' }}
                                 priority
                             />
+
                         </div>
 
                         {/* Main Content */}
