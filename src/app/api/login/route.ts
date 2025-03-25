@@ -8,14 +8,14 @@ import Admin from '@/models/admin';
 
 // connection to db and super admin
 import dbConnect from '@/lib/db';
-import { setSuperAdmin } from '../createSuperAdmin/route';
+import { POST as setSuperAdmin } from '../createSuperAdmin/route';
 
 
 export async function POST(request: NextRequest) {
     try {
         await dbConnect();
         const res = await setSuperAdmin();
-        if (res.message === "success") {
+        if (res.status === 200 || res.status === 201) {
             const values = await request.json();
             console.log(values);
     
