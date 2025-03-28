@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
             
             if (!admin) {
                 // Check if admin does not exist
-                return NextResponse.json({ error: "Admin Does not Exist" }, { status: 401 });
+                return NextResponse.json({ message: "Admin Does not Exist" }, { status: 401 });
             } else {
                 // Validate Password
                 const validatePassword = await bcryptjs.compare(values.password, admin.password);
@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
     
                     return response;
                 } else {
-                    return NextResponse.json({ error: "Invalid Credentials" }, { status: 409 });
+                    return NextResponse.json({ message: "Invalid Credentials" }, { status: 409 });
                 }
             }
         }
@@ -55,6 +55,6 @@ export async function POST(request: NextRequest) {
         return NextResponse.json({ message: "fail" }, { status: 301 })
     } catch (error) {
         console.log(error);
-        return NextResponse.json({ error: "Some Error occurred" }, { status: 500 });
+        return NextResponse.json({ message: "Some Error occurred" }, { status: 500 });
     }
 }

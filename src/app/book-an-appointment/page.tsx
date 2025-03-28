@@ -34,8 +34,8 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea';
-import { toast } from 'sonner';
+import { Textarea } from '@/components/ui/textarea'
+import { toast } from 'sonner'
 
 // Form Schema
 const formSchema = z.object({
@@ -69,7 +69,14 @@ const Page = () => {
 
     function onSubmit(values: z.infer<typeof formSchema>) {
         console.log(values);
-        toast.success("Form Submitted Successfully");
+        toast.success("Form Submitted Successful", {
+            style: {
+                "backgroundColor": "#D5F5E3",
+                "color": "black",
+                "border": "none"
+            },
+            duration: 1500
+        });
         form.reset();
     }
 
