@@ -83,18 +83,20 @@ const Page = () => {
                     className='h-fit w-screen flex flex-col items-center justify-center p-5 bg-cover bg-center gap-3'
                     style={{ backgroundImage: "url('/assets/contact.jpg')" }} // Set the background image here
                 >
-                    <div className=' bg-orange-300 p-3 rounded-2xl'>
-                        <h1 className="text-3xl text-white font-bold z-10">
+                    <div className=' bg-orange-300 p-3 w-screen'>
+                        <h1 className="text-3xl max-md:text-xl text-white font-bold z-10 text-center">
                             Get in touch with us
                         </h1>
-                        <p className="text-base text-white text-justify z-10">
+                        <p className="text-base max-md:text-sm text-white max-md:text-justify z-10 text-center">
                             Your Voice Matters, Reach Out to Us Today
                         </p>
                     </div>
 
-                    <Card className='w-full max-w-xl'>
+                    <Card className='w-full max-w-xl bg-transparent max-md:bg-white backdrop-filter backdrop-blur-md border-none shadow-md shadow-black'>
                         <CardHeader>
-                            <CardTitle>Book An Appointment</CardTitle>
+                            <CardTitle className=' text-2xl'>
+                                Book An Appointment
+                            </CardTitle>
                         </CardHeader>
                         <CardContent>
                             <Form {...form}>
@@ -106,7 +108,7 @@ const Page = () => {
                                             <FormItem>
                                                 <FormLabel>Name</FormLabel>
                                                 <FormControl>
-                                                    <Input placeholder="John Doe" type='text' {...field} />
+                                                    <Input className='placeholder:text-gray-800 border-black' placeholder="John Doe" type='text' {...field} />
                                                 </FormControl>
                                                 <FormMessage />
                                             </FormItem>
@@ -119,7 +121,7 @@ const Page = () => {
                                             <FormItem>
                                                 <FormLabel>Email</FormLabel>
                                                 <FormControl>
-                                                    <Input placeholder="someone@example.com" type='email' {...field} />
+                                                    <Input className='placeholder:text-gray-800 border-black' placeholder="someone@example.com" type='email' {...field} />
                                                 </FormControl>
                                                 <FormMessage />
                                             </FormItem>
@@ -133,8 +135,8 @@ const Page = () => {
                                                 <FormLabel>Phone</FormLabel>
                                                 <FormControl>
                                                     <div className=' w-full flex flex-row justify-normal items-center gap-2'>
-                                                    <span className=' border border-input px-3 py-1.5 rounded-md'>+91</span>
-                                                    <Input type='tel' {...field} />
+                                                        <span className=' border border-black px-3 py-1.5 rounded-md'>+91</span>
+                                                        <Input className='placeholder:text-gray-800 border-black' type='tel' {...field} />
                                                     </div>
                                                 </FormControl>
                                                 <FormMessage />
@@ -149,7 +151,7 @@ const Page = () => {
                                                 <FormLabel>Purpose</FormLabel>
                                                 <FormControl>
                                                     <Select {...field} onValueChange={field.onChange}>
-                                                        <SelectTrigger className="w-full">
+                                                        <SelectTrigger className="w-full border-black cursor-pointer">
                                                             <SelectValue placeholder="Select purpose" />
                                                         </SelectTrigger>
                                                         <SelectContent>
@@ -173,15 +175,19 @@ const Page = () => {
                                             <FormItem>
                                                 <FormLabel>Message</FormLabel>
                                                 <FormControl>
-                                                    <Textarea {...field} />
+                                                    <Textarea className=' placeholder:text-gray-800 border-black' {...field} />
                                                 </FormControl>
                                                 <FormMessage />
                                             </FormItem>
                                         )}
                                     />
-                                    <Button type="submit" className='cursor-pointer'>
-                                        Submit
-                                    </Button>
+                                    <div className=' w-full h-fit flex items-center justify-center'>
+                                        <Button
+                                            type="submit"
+                                            className='cursor-pointer rounded-sm bg-orange-500 hover:bg-orange-600 max-w-sm w-full'>
+                                            Submit
+                                        </Button>
+                                    </div>
                                 </form>
                             </Form>
                         </CardContent>
