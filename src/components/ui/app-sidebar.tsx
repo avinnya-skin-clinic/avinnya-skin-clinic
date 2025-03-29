@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import {
     UserRoundCheck,
     UserRoundX,
-    User2,
     LogOut,
     UserCog
 } from "lucide-react"
@@ -105,7 +104,6 @@ export function AppSidebar() {
                 <SidebarFooter>
                     <SidebarMenu>
                         <SidebarMenuItem className=' flex flex-row justify-between items-center'>
-                            <User2 />
                                 {
                                     name.length < 20
                                         ?
