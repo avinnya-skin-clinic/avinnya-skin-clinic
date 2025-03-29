@@ -7,6 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { format } from "date-fns"
 import { cn } from "@/lib/utils"
+import axios, { AxiosResponse } from "axios";
 
 // UI Components import
 import {
@@ -36,6 +37,7 @@ import { Button } from "../ui/button"
 import { RequestedAppointment } from "@/lib/types"
 import { CalendarIcon, Pen } from "lucide-react"
 import { Input } from "../ui/input"
+import { toast } from "sonner";
 
 
 const formSchema = z.object({
@@ -67,8 +69,48 @@ const ApproveCustomerCard = ({ data }: { data: RequestedAppointment }) => {
         },
     })
 
-    function onSubmit(values: z.infer<typeof formSchema>) {
-        console.log(values);
+    async function onSubmit(values: z.infer<typeof formSchema>) {
+
+        try {
+            const response: AxiosResponse = await axios.post('/api/approve-customer', values, {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            console.log(values);
+
+            const data = await response.data;
+
+            if (response.status === 200) {
+                toast.success(data.message || "Approved Customer", {
+                    style: {
+                        "backgroundColor": "#D5F5E3",
+                        "color": "black",
+                        "border": "none"
+                    },
+                    duration: 1500
+                });
+
+                window.location.reload();
+            }
+
+        } catch (error) {
+            if (axios.isAxiosError(error) && error.response) {
+                const { status, data } = error.response;
+                if (status === 401) {
+                    toast.error(data.message || "Some Error Occured", {
+                        style: {
+                            "backgroundColor": "#FADBD8",
+                            "color": "black",
+                            "border": "none"
+                        },
+                        duration: 2500
+                    })
+                    form.reset();
+                }
+            }
+        }
     }
 
     return (
@@ -187,11 +229,11 @@ const ApproveCustomerCard = ({ data }: { data: RequestedAppointment }) => {
                                     )}
                                 />
                             </div>
+                            <DialogFooter>
+                                <Button className=" cursor-pointer" type="submit">Save</Button>
+                            </DialogFooter>
                         </form>
                     </Form>
-                    <DialogFooter>
-                        <Button type="submit">Save</Button>
-                    </DialogFooter>
                 </DialogContent>
             </Dialog>
         </React.Fragment>
