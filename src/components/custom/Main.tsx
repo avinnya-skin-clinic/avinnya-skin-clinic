@@ -40,8 +40,8 @@ const Main = () => {
                             </h1>
 
                             {/* Description */}
-                            <p className='text-lg max-md:hidden text-black text-justify px-4 font-medium'>
-                                Reveal your Radiant Best with Avinnya&apos;s Skin Care Clinic
+                            <p className='text-lg max-md:hidden text-orange-400 text-justify px-4 font-medium'>
+                                Reveal your Radiant Best with Avinnya&apos;s Skin and Asthetic Care Clinic
                             </p>
 
                             {/* Book Appointment Button */}

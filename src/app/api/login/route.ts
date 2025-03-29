@@ -17,10 +17,8 @@ export async function POST(request: NextRequest) {
         const res = await setSuperAdmin();
         if (res.status === 200 || res.status === 201) {
             const values = await request.json();
-            console.log(values);
     
             const admin = await Admin.findOne({ email: values.email });
-            console.log(admin);
             
             if (!admin) {
                 // Check if admin does not exist

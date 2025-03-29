@@ -6,17 +6,15 @@ interface Requested_Appointment extends Document {
     phone: string;
     purpose: string,
     message: string,
-    approvedBy: string;
 }
 
 const RequestedAppointmentSchema: Schema<Requested_Appointment> = new mongoose.Schema(
     {
         name: { type: String, required: true },
-        email: { type: String, required: true},
-        phone: { type: String, required: true},
-        purpose: { type: String, required: true},
-        message: { type: String, required: true},
-        approvedBy: { type: String, required: true },
+        email: { type: String, required: true },
+        phone: { type: String, required: true },
+        purpose: { type: String, required: true },
+        message: { type: String, required: false },
     },
     { timestamps: true }
 );
