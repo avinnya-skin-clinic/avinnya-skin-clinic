@@ -13,7 +13,7 @@ const page = () => {
       ></div>
 
       {/* Content */}
-      <div className='relative z-10'>
+      <div className='relative text-center max-md:text-lg z-10'>
         Welcome to Avinnya Skin Clinic
       </div>
     </div>
