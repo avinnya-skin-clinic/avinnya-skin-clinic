@@ -116,7 +116,7 @@ const Page = () => {
         <React.Fragment>
             <main className=' h-screen w-screen overflow-hidden flex flex-row justify-center items-center'>
                 <section className=' bg-white max-w-[50vw] max-md:max-w-[100vw] w-full h-screen overflow-hidden flex flex-col justify-center items-center gap-5'>
-                    <h1 className=' text-3xl max-md:text-xl font-bold'>
+                    <h1 className=' text-3xl font-bold z-20 max-md:text-black'>
                         ADMIN LOGIN
                     </h1>
                     <Card className=' max-w-[30vw] max-md:max-w-[75vw] max-lg:max-w-[40vw] w-full max-md:z-10'>
@@ -169,7 +169,7 @@ const Page = () => {
                     alt='Admin Page'
                     width={1000}
                     height={1000}
-                    className='w-full max-w-[50vw] h-screen object-cover max-md:absolute max-md:left-0 max-md:top-0 max-md:z-0 max-md:max-w-[100vw] max-md:blur-xs'
+                    className='w-full max-w-[50vw] h-screen object-cover max-md:absolute max-md:left-0 max-md:top-0 max-md:z-0 max-md:max-w-[100vw] max-md:blur-md'
                     priority
                 />
             </main>
