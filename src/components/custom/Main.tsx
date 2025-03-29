@@ -40,7 +40,7 @@ const Main = () => {
                             </h1>
 
                             {/* Description */}
-                            <p className='text-lg max-md:text-sm text-black text-justify px-4 font-medium'>
+                            <p className='text-lg max-md:hidden text-black text-justify px-4 font-medium'>
                                 Reveal your Radiant Best with Avinnya&apos;s Skin Care Clinic
                             </p>
 
