@@ -8,7 +8,6 @@ export async function POST(request: NextRequest) {
     try {
         await dbConnect();
         const values = await request.json();
-        console.log(values)
 
         if (!values) {
             return NextResponse.json({ message: "No Values Found" }, { status: 401 });
@@ -33,7 +32,6 @@ export async function POST(request: NextRequest) {
         }
 
         const AdminName = decodedToken['name'];
-        console.log(AdminName);
 
         const approvedCustomer = new ApprovedAppointment({
             name: values.name,
@@ -44,19 +42,16 @@ export async function POST(request: NextRequest) {
             appointment_date: new Date(values.appointment_date),
             approvedBy: AdminName
         });
-        console.log(approvedCustomer)
 
         const savedCustomer = await approvedCustomer.save();
 
         if (savedCustomer) {
-            console.log(savedCustomer)
             const deleteRequestedId = await RequestedAppointment.findOne({ email: values.email });
 
             if (deleteRequestedId) {
                 const deleteRequested = await RequestedAppointment.findByIdAndDelete(deleteRequestedId._id);
 
                 if (deleteRequested) {
-                    console.log(deleteRequested)
                     return NextResponse.json({ message: "Appointment created" }, { status: 200 });
                 } else {
                     return NextResponse.json({ message: "Failed to delete the requested appointment" }, { status: 500 });
@@ -64,7 +59,6 @@ export async function POST(request: NextRequest) {
             } else {
                 return NextResponse.json({ message: "No appointment found with that email" }, { status: 404 });
             }
-
         }
 
     } catch (error) {

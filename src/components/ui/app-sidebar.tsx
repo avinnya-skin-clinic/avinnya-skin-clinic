@@ -1,11 +1,12 @@
 'use client';
 
+// UI Components import
 import { useEffect, useState } from 'react';
 import {
     UserRoundCheck,
     UserRoundX,
     User2,
-    ChevronUp
+    LogOut
 } from "lucide-react"
 import {
     Sidebar,
@@ -18,14 +19,12 @@ import {
     SidebarMenuItem,
     SidebarFooter
 } from "@/components/ui/sidebar"
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+import { toast } from 'sonner';
 
+// System Components import
 import Link from "next/link"
+import axios from 'axios';
+import { useRouter } from 'next/navigation';
 
 // Menu items.
 const items = [
@@ -43,16 +42,39 @@ const items = [
 
 export function AppSidebar() {
 
-    // State to store name after checking localStorage
+    const router = useRouter()
     const [name, setName] = useState<string>('');
 
     useEffect(() => {
-        // Access localStorage only on the client-side
         const storedName = window.localStorage.getItem('name');
         if (storedName) {
             setName(storedName);
         }
-    }, []); // Empty dependency array ensures this runs only once after component mount
+    }, []);
+
+    // logout
+    const handlelogout = async () => {
+        try {
+            await axios.get("/api/logout")
+                .then((res) => {
+                    toast.success(res.data.message || "Logout Successful!", {
+                        style: {
+                            "backgroundColor": "#D5F5E3",
+                            "color": "black",
+                            "border": "none"
+                        },
+                        duration: 1500
+                    });
+                    window.localStorage.removeItem("name");
+                    router.push("/login");
+                })
+                .catch((error) => {
+                    console.log(error);
+                })
+        } catch (error) {
+            console.log(error);
+        }
+    };
 
     return (
         <Sidebar collapsible="icon" variant="floating">
@@ -76,33 +98,18 @@ export function AppSidebar() {
                 </SidebarGroup>
                 <SidebarFooter>
                     <SidebarMenu>
-                        <SidebarMenuItem>
-                            <DropdownMenu>
-                                <DropdownMenuTrigger asChild>
-                                    <SidebarMenuButton>
-                                        <User2 />
-                                        {
-                                            name.length < 20
-                                                ?
-                                                (name === '' ? 'Username' : name)
-                                                :
-                                                (name === '' ? 'Username' : name.substring(0, 20) + "...")
-                                        }
-                                        <ChevronUp className="ml-auto" />
-                                    </SidebarMenuButton>
-                                </DropdownMenuTrigger>
-                                <DropdownMenuContent
-                                    side="top"
-                                    className="w-[--radix-popper-anchor-width]"
-                                >
-                                    <DropdownMenuItem>
-                                        <span>Account</span>
-                                    </DropdownMenuItem>
-                                    <DropdownMenuItem>
-                                        <span>Sign out</span>
-                                    </DropdownMenuItem>
-                                </DropdownMenuContent>
-                            </DropdownMenu>
+                        <SidebarMenuItem className=' flex flex-row justify-between items-center'>
+                            <User2 />
+                                {
+                                    name.length < 20
+                                        ?
+                                        (name === '' ? 'Username' : name)
+                                        :
+                                        (name === '' ? 'Username' : name.substring(0, 20) + "...")
+                                }
+                            <SidebarMenuButton className=' w-fit h-fit cursor-pointer hover:bg-red-500 hover:text-white' onClick={handlelogout}>
+                                <LogOut className="ml-auto" />
+                            </SidebarMenuButton>
                         </SidebarMenuItem>
                     </SidebarMenu>
                 </SidebarFooter>
