@@ -1,20 +1,20 @@
 'use client';
 
-import { ApprovedAppointmentTable } from '@/components/table/approved-data-table';
-import { ApprovedAppointment } from '@/lib/types';
+import { AdminTable } from '@/components/table/admin-data-table';
+import { Admin } from '@/lib/types';
 import axios, { AxiosResponse } from 'axios';
 import React from 'react'
 
 const Page = () => {
 
-    const [approvedData, setApprovedData] = React.useState<ApprovedAppointment[]>([]);
+    const [adminData, setAdminData] = React.useState<Admin[]>([]);
 
     React.useEffect(() => {
         const getData = async () => {
-            const response: AxiosResponse = await axios.get('/api/approved-appointment');
+            const response: AxiosResponse = await axios.get('/api/admin');
             if (response.status === 200) {
                 const data = await response.data;
-                setApprovedData(data?.data || []);
+                setAdminData(data?.data || []);
             }
         }
         getData()
@@ -23,7 +23,7 @@ const Page = () => {
   return (
     <React.Fragment>
         <main className=' h-fit w-full overflow-hidden flex justify-start items-start py-3 px-12'>
-            <ApprovedAppointmentTable data={approvedData} />
+            <AdminTable data={adminData} />
         </main>
     </React.Fragment>
   )

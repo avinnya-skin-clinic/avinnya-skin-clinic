@@ -6,7 +6,8 @@ import {
     UserRoundCheck,
     UserRoundX,
     User2,
-    LogOut
+    LogOut,
+    UserCog
 } from "lucide-react"
 import {
     Sidebar,
@@ -37,6 +38,11 @@ const items = [
         title: "Requested",
         icon: UserRoundX,
         url: "/dashboard/requested"
+    },
+    {
+        title: "Admin",
+        icon: UserCog,
+        url: "/dashboard/admin"
     }
 ]
 

@@ -20,10 +20,6 @@ const Page = () => {
         getData()
     }, []);
 
-    React.useEffect(() => {
-        console.log(requestedData)
-    }, [requestedData]);
-
   return (
     <React.Fragment>
         <main className=' h-fit w-full overflow-hidden flex justify-start items-start py-3 px-12'>

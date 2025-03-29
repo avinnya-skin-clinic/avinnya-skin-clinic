@@ -1,3 +1,14 @@
+export type Admin = {
+    _id: string,
+    name: string,
+    email: string,
+    password: string,
+    createdBy: string,
+    createdAt: Date,
+    updatedAt: Date,
+    __v: number
+}
+
 export type RequestedAppointment = {
     _id: string,
     name: string,

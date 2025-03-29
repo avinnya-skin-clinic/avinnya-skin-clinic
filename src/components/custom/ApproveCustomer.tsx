@@ -78,8 +78,6 @@ const ApproveCustomerCard = ({ data }: { data: RequestedAppointment }) => {
                 },
             });
 
-            console.log(values);
-
             const data = await response.data;
 
             if (response.status === 200) {
