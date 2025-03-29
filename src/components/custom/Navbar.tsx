@@ -392,7 +392,7 @@ const Navbar = () => {
                     <Button
                         variant={'default'}
                         className=' flex justify-center items-center text-lg cursor-pointer p-5 rounded-none bg-orange-400 border-[2px] border-orange-400 text-white font-medium hover:bg-white hover:text-orange-400 hover:border-[2px] hover:border-orange-400 duration-200 ease-in-out'
-                        onClick={() => { window.open('tel:+919999999999', '_self'); }}
+                        onClick={() => { window.open('tel:+919130759132', '_self'); }}
                     >
                         CALL NOW
                     </Button>
@@ -441,7 +441,7 @@ const Navbar = () => {
                         <Button
                             variant={'default'}
                             className=' w-full cursor-pointer p-3 bg-orange-400 text-white'
-                            onClick={() => { window.open('tel:+919108000000', '_self'); }}
+                            onClick={() => { window.open('tel:+919130759132', '_self'); }}
                         >
                             Call Now
                         </Button>

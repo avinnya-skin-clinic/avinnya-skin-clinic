@@ -16,22 +16,21 @@ const Main = () => {
         <React.Fragment>
             <section className='h-fit max-md:h-auto w-full overflow-hidden'>
                 <section className='h-fit w-full bg-[#F5F5DC] relative'>
-                    <div className='relative w-full h-auto'>
+                    <div className='relative w-full h-fit'>
                         {/* Background Image */}
                         <div className='absolute top-0 right-0 z-0'>
                             <Image
                                 src={'/assets/main.svg'}
                                 alt='main page'
-                                width={540}
-                                height={640}
-                                style={{ objectFit: 'contain' }}
+                                width={640}
+                                height={740}
+                                className=' w-full h-auto object-contain'
                                 priority
                             />
-
                         </div>
 
                         {/* Main Content */}
-                        <div className='w-full h-[87.5vh] max-md:h-[75vh] flex flex-col justify-start items-center translate-y-[25%] gap-4 max-md:gap-2 px-4 py-8 max-w-4xl z-10'>
+                        <div className='w-full h-[87.5vh] max-md:h-[52.5vh] flex flex-col justify-start items-center translate-y-[25%] gap-4 max-md:gap-2 px-4 py-8 max-w-4xl z-10'>
                             {/* Heading */}
                             <h2 className='text-xl md:text-3xl font-semibold text-orange-400 tracking-[0.25em] text-center'>
                                 WELCOME TO
@@ -41,7 +40,7 @@ const Main = () => {
                             </h1>
 
                             {/* Description */}
-                            <p className='text-lg max-md:text-sm text-orange-400 text-justify px-4 font-medium'>
+                            <p className='text-lg max-md:text-sm text-black text-justify px-4 font-medium'>
                                 Reveal your Radiant Best with Avinnya&apos;s Skin Care Clinic
                             </p>
 

@@ -7,7 +7,7 @@ import { Button } from '../ui/button';
 
 const Footer = () => {
 
-  const location = "Pune";
+  const location = "2nd floor, Narayan chembers, behind Vitthal HP petrol pump, Bhekrai Nagar, Hadapsar, Phursungi, Pune, Maharashtra 412308";
 
   return (
     <footer className="w-full bg-[#F5F5DC] text-black py-8">
@@ -36,16 +36,16 @@ const Footer = () => {
             <h3 className="text-2xl font-semibold underline">Contact Us</h3>
             <div className=' flex flex-row gap-1'>
               <span className=' font-bold'>Address: </span>
-              <p className=' text-orange-600 font-medium'>{location}</p>
+              <p className=' text-orange-600 font-medium max-w-[17.5vw] max-md:max-w-[100vw] text-justify text-sm'>{location}</p>
             </div>
             <div className=' flex flex-row gap-1'>
               <span className=' font-bold'>Phone: </span>
               <Button
                 variant={'link'}
                 className='text-orange-600 p-1 h-fit cursor-pointer font-medium'
-                onClick={() => { window.open('tel:+919999999999', '_self'); }}
+                onClick={() => { window.open('tel:+919130759132', '_self'); }}
               >
-                +91-9999999999
+                +91-9130759132
               </Button>
             </div>
             <div className=' flex flex-row gap-1'>
@@ -68,7 +68,7 @@ const Footer = () => {
             <div className="relative w-full h-[400px] rounded-lg shadow-lg">
               <iframe
                 title="Avinnya Skin Clinic Location"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=73.9430%2C18.4743%2C73.9630%2C18.4943&layer=mapnik&marker=18.4843%2C73.9530"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=73.9430%2C18.4743%2C73.9630%2C18.4943&layer=mapnik&marker=18.4843%2C73.9530&zoom=12"
                 width="100%"
                 height="100%"
                 className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
