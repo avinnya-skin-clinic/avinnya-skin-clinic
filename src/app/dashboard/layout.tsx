@@ -12,7 +12,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     return (
         <SidebarProvider open={open} onOpenChange={setOpen} className=" overflow-hidden flex">
             <AppSidebar />
-            <main className=" overflow-hidden flex flex-1">
+            <main className=" overflow-hidden flex flex-col flex-1">
                 <CustomTrigger open={open} />
                 {children}
             </main>

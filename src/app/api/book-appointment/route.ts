@@ -10,19 +10,16 @@ export async function POST(request: NextRequest) {
     try {
         await dbConnect();
         const values = await request.json();
-        console.log(values)
         if (!values) {
             return NextResponse.json({ message: "No Values Found" }, { status: 400 });
         }
         const newAppointment = new RequestedAppointment({
-            name: values.username,
+            name: values.name,
             email: values.email,
             phone: values.phone,
             purpose: values.purpose,
             message: values.message || ""
         });
-
-        console.log(newAppointment)
 
         const savedInfo = await newAppointment.save();
 

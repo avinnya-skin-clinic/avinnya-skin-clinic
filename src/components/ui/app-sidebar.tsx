@@ -32,12 +32,12 @@ const items = [
     {
         title: "Approved",
         icon: UserRoundCheck,
-        url: "/approved"
+        url: "/dashboard/approved"
     },
     {
         title: "Requested",
         icon: UserRoundX,
-        url: "/requested"
+        url: "/dashboard/requested"
     }
 ]
 

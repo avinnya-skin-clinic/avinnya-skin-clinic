@@ -40,8 +40,8 @@ import axios from 'axios';
 
 // Form Schema
 const formSchema = z.object({
-    username: z.string().min(2, {
-        message: "Username must be at least 2 characters.",
+    name: z.string().min(2, {
+        message: "Name must be at least 2 characters.",
     }),
     email: z.string().email(),
     phone: z.string().min(10, {
@@ -60,7 +60,7 @@ const Page = () => {
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
-            username: "",
+            name: "",
             email: "",
             phone: "",
             purpose: "",
@@ -147,7 +147,7 @@ return (
                             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                                 <FormField
                                     control={form.control}
-                                    name="username"
+                                    name="name"
                                     render={({ field }) => (
                                         <FormItem>
                                             <FormLabel>Name</FormLabel>

@@ -13,7 +13,7 @@ export function CustomTrigger(props: CustomTriggerProps) {
     const { toggleSidebar } = useSidebar();
 
     return (
-        <Button variant={'link'} className=" cursor-pointer" onClick={toggleSidebar}>
+        <Button variant={'link'} className=" cursor-pointer h-fit w-full flex justify-start items-center" onClick={toggleSidebar}>
             <PanelLeft className=" max-md:hidden"/>
             <Separator orientation="vertical" className=" max-md:hidden"/>
             <span className=" max-md:hidden">
