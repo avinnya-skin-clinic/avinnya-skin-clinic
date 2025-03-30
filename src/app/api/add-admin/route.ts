@@ -5,6 +5,7 @@ import Admin from '@/models/admin';
 import dbConnect from '@/lib/db';
 import nodemailer from "nodemailer";
 import { format } from 'date-fns';
+import { toZonedTime } from 'date-fns-tz';
 import jwt from 'jsonwebtoken';
 
 const sendEmail = async (AdminName: string, name: string, email: string, password: string) => {
@@ -19,7 +20,10 @@ const sendEmail = async (AdminName: string, name: string, email: string, passwor
             }
         });
 
-        const formattedDate = format(new Date(), 'EEEE, MMMM dd, yyyy');
+        const timeZone = 'Asia/Kolkata';
+        const zonedDate = toZonedTime(new Date(), timeZone);
+
+        const formattedDate = format(zonedDate, 'EEEE, MMMM dd, yyyy');
 
         const mailOptions = {
             from: process.env.EMAIL_ID,

@@ -2,6 +2,7 @@ import Admin from "@/models/admin";
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { format } from 'date-fns';
+import { toZonedTime } from 'date-fns-tz';
 import jwt from "jsonwebtoken";
 
 const sendEmail = async (name: string, email: string) => {
@@ -16,7 +17,10 @@ const sendEmail = async (name: string, email: string) => {
             }
         });
 
-        const formattedDate = format(new Date(), 'EEEE, MMMM dd, yyyy');
+        const timeZone = 'Asia/Kolkata';
+        const zonedDate = toZonedTime(new Date(), timeZone);
+
+        const formattedDate = format(zonedDate, 'EEEE, MMMM dd, yyyy');
 
         const mailOptions = {
             from: process.env.EMAIL_ID,

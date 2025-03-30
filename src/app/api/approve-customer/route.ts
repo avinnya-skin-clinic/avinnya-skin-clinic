@@ -5,6 +5,7 @@ import ApprovedAppointment from "@/models/approved_appointment";
 import RequestedAppointment from "@/models/requested_appointment";
 import nodemailer from "nodemailer";
 import { format } from 'date-fns';
+import { toZonedTime } from 'date-fns-tz';
 
 const sendEmail = async (name: string, email: string, purpose: string, appointment_date: Date) => {
     try {
@@ -18,9 +19,11 @@ const sendEmail = async (name: string, email: string, purpose: string, appointme
             }
         });
 
-        const formattedDate = format(new Date(appointment_date), "MMMM dd, yyyy");
-        console.log("appointment_date: ", appointment_date);
-        console.log("formatted Date: ", formattedDate);
+        const timeZone = 'Asia/Kolkata';
+        const zonedDate = toZonedTime(appointment_date, timeZone);
+
+        const formattedDate = format(zonedDate, "EEEE, MMMM dd, yyyy");
+
         const mailOptions = {
             from: process.env.EMAIL_ID,
             to: email,
