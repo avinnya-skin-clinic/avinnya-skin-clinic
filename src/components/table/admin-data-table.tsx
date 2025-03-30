@@ -141,7 +141,9 @@ export const columns: ColumnDef<Admin>[] = [
                             duration: 1500
                         });
         
-                        window.location.reload();
+                        setTimeout(() => {
+                            window.location.reload();
+                        }, 1500);
                     }
         
                 } catch (error) {
