@@ -111,7 +111,7 @@ export const columns: ColumnDef<RequestedAppointment>[] = [
                 </Button>
             )
         },
-        cell: ({ row }) => <div>{row.getValue("message")}</div>,
+        cell: ({ row }) => <div>{row.getValue("message") ? row.getValue("message") : "No Message"}</div>,
     },
     {
         id: "actions",
