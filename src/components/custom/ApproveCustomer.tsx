@@ -90,7 +90,9 @@ const ApproveCustomerCard = ({ data }: { data: RequestedAppointment }) => {
                     duration: 1500
                 });
 
-                window.location.reload();
+                setTimeout(() => {
+                    window.location.reload();
+                }, 1500);
             }
 
         } catch (error) {

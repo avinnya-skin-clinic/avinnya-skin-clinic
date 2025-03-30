@@ -18,8 +18,9 @@ const sendEmail = async (name: string, email: string, purpose: string, appointme
             }
         });
 
-        const formattedDate = format(new Date(appointment_date), 'EEEE, MMMM dd, yyyy');
-
+        const formattedDate = format(new Date(appointment_date), "MMMM dd, yyyy");
+        console.log("appointment_date: ", appointment_date);
+        console.log("formatted Date: ", formattedDate);
         const mailOptions = {
             from: process.env.EMAIL_ID,
             to: email,
