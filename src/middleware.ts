@@ -33,6 +33,5 @@ export const config = {
         '/dashboard',
         '/dashboard/requested',
         '/dashboard/approved',
-        '/login'
     ]
 }
