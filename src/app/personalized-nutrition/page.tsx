@@ -26,7 +26,7 @@ const Page = () => {
                     <h2 className="text-lg text-white font-medium z-10">
                         Our Services
                     </h2>
-                    <h1 className="text-3xl text-white font-bold z-10">
+                    <h1 className="text-3xl text-center text-white font-bold z-10">
                         Personalized Nutrition
                     </h1>
                     <p className="text-base text-white text-justify z-10">

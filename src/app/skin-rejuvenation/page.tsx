@@ -26,7 +26,7 @@ const Page = () => {
                     <h2 className="text-lg text-white font-medium z-10">
                         Our Services
                     </h2>
-                    <h1 className="text-3xl text-white font-bold z-10">
+                    <h1 className="text-3xl text-center text-white font-bold z-10">
                         Skin Rejuvenation
                     </h1>
                     <p className="text-base text-white text-justify z-10">
@@ -42,7 +42,6 @@ const Page = () => {
                             src="/assets/skin-pigmentation-treatment.jpg"
                             alt="Skin Pigmentation Treatment"
                             className="w-full h-full object-cover rounded-lg"
-                            layout="intrinsic"
                             width={500}
                             height={500}
                             loading='lazy'
@@ -159,7 +158,6 @@ const Page = () => {
                             src="/assets/skin-tanning.jpg"
                             alt="Skin Tanning"
                             className="w-full h-full object-cover rounded-lg"
-                            layout="intrinsic"
                             width={500}
                             height={500}
                             loading='lazy'

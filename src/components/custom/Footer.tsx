@@ -4,6 +4,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { Button } from '../ui/button';
+import { InstagramIcon } from 'lucide-react';
 
 const Footer = () => {
 
@@ -58,6 +59,18 @@ const Footer = () => {
                 }}
               >
                 avinnyaskinclinic.info@gmail.com
+              </Button>
+            </div>
+            <div className=' flex flex-row gap-1'>
+              <span className=' font-bold'>Social Handles: </span>
+              <Button
+                className="text-orange-600 border border-orange-300 p-1 h-fit cursor-pointer font-medium"
+                variant={"link"}
+                onClick={() => {
+                  window.open('https://www.instagram.com/avinnyaskinclinic/', '_blank');
+                }}
+              >
+                <InstagramIcon className=' h-full w-full' /> Instagram
               </Button>
             </div>
           </div>

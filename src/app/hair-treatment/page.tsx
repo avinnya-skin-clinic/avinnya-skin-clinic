@@ -26,11 +26,11 @@ const Page = () => {
           <h2 className="text-lg text-white font-medium z-10">
             Our Services
           </h2>
-          <h1 className="text-3xl text-white font-bold z-10">
-            Hair Treatment
+          <h1 className="text-3xl text-center text-white font-bold z-10">
+            Skin Hair Laser Treatment
           </h1>
           <p className="text-base text-white text-justify z-10">
-            Hair Treatment therapy aims to promote and enhance natural hair regrowth for healthier, fuller locks.
+            Skin Hair Laser Treatment aims to promote natural hair regrowth and improve the health and fullness of your hair.
           </p>
         </section>
 
@@ -42,7 +42,6 @@ const Page = () => {
               src="/assets/hair-thinning.jpg"
               alt="Hair Thinning"
               className="w-full h-full object-cover rounded-lg"
-              layout="intrinsic"
               width={500}
               height={500}
               loading='lazy'
@@ -105,7 +104,6 @@ const Page = () => {
               src="/assets/hair-loss.jpg"
               alt="Hair Thinning"
               className="w-full h-full object-cover rounded-lg"
-              layout="intrinsic"
               width={500}
               height={500}
               loading='lazy'
@@ -167,7 +165,6 @@ const Page = () => {
               src="/assets/vampire-facial.jpg"
               alt="Vampire Facial"
               className="w-full h-full object-cover rounded-lg"
-              layout="intrinsic"
               width={500}
               height={500}
               loading='lazy'
