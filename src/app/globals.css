@@ -153,3 +153,28 @@
   background-color: #ff9b3e;
   color: white;
 }
+
+/* Customize the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;  /* Vertical scrollbar width */
+  height: 1px; /* Horizontal scrollbar height */
+}
+
+/* Customize the thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #ff9b3e;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+
+/* Optional: on hover, change the thumb color */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff891b;
+  cursor: pointer;
+}
+
+/* Customize the track (the area where the thumb moves) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
