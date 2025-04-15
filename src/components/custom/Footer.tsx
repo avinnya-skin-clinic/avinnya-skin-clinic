@@ -67,7 +67,7 @@ const Footer = () => {
                 className="text-orange-600 border border-orange-300 p-1 h-fit cursor-pointer font-medium"
                 variant={"link"}
                 onClick={() => {
-                  window.open('https://www.instagram.com/avinnyaskinclinic/', '_blank');
+                  window.open('https://www.instagram.com/avinnyaskinhairlaserclinic/', '_blank');
                 }}
               >
                 <InstagramIcon className=' h-full w-full' /> Instagram
